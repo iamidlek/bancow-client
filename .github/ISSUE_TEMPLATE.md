@@ -2,7 +2,7 @@
 
 - [ ] New Feature
 - [ ] Bug Fix
-- [ ] Confing
+- [ ] Config
 - [ ] style
 - [ ] refactoring
 
