@@ -1,5 +1,3 @@
-// import "@react-pdf-viewer/core/lib/styles/index.css";
-// import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import Theme from "../styles/theme";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
