@@ -5,6 +5,7 @@ WORKDIR /usr/app
 # Install PM2 globally
 RUN npm install --global pm2
 
+# Separate layer
 COPY package.json package-lock.json ./
 
 # Install dependencies
