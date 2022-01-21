@@ -30,7 +30,7 @@ export const HeadLine4 = styled.h4`
 
 export const HeadLine6 = styled.h6`
   font-size: 20px;
-  &.active {
+  a.active & {
     color: ${(props) => props.theme.colors.point};
   }
   @media ${(props) => props.theme.breakpoints.md} {
