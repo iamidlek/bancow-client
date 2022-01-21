@@ -30,6 +30,7 @@ export const GlobalStyles = createGlobalStyle<DefaultTheme>`
   }
   a {
     text-decoration: none;
+    color: #000;
   }
   li{
     list-style: none;

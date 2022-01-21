@@ -16,8 +16,7 @@ export const themeDefault: DefaultTheme = {
     white: "#FFFFFF",
   },
   breakpoints: {
-    sm: "screen and (max-width: 576px)", // 보다 작을때
-    md: "screen and (max-width: 768px)", // 보다 작을때
-    lg: "screen and (max-width: 992px)", // 보다 작을때
+    sm: "screen and (max-width: 576px)", // mobile
+    md: "screen and (max-width: 1024px)", // ipad pro
   },
 };
