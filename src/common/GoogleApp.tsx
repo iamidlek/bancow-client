@@ -7,6 +7,7 @@ const Box = styled.div`
     width: 130px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100px;
   }
 `;
 
