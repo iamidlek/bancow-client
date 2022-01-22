@@ -24,7 +24,7 @@ export const Section = styled.div`
     height: 1100px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    // row에서 column 형태로 전환되어야함
+    height: 1000px;
   }
 `;
 
@@ -49,6 +49,10 @@ export const HeadLine2md = styled.h2`
     font-size: 30px;
     font-weight: 400;
     line-height: 1.45;
+    color: ${(props) => props.theme.colors.white};
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 220px;
     color: ${(props) => props.theme.colors.white};
   }
 `;
@@ -108,13 +112,14 @@ export const Container = styled.div`
     background-color: ${(props) => props.theme.colors.point};
     justify-content: center;
   }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding-top: 120px;
+    height: 40%;
+  }
 `;
 
 export const Box = styled.div`
   position: relative;
-  /* @media ${(props) => props.theme.breakpoints.md} {
-    top: 0;
-  } */
 `;
 
 export const AppLinkBox = styled.div`
@@ -126,6 +131,7 @@ export const AppLinkBox = styled.div`
     justify-content: center;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    gap: 14px;
   }
 `;
 
@@ -149,6 +155,9 @@ export const HeadLine5 = styled.h5`
     }
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 12px;
+    top: -40px;
+    right: 0;
   }
 `;
 
@@ -171,6 +180,7 @@ export const ToggleTheme = styled.div`
     bottom: 16px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    right: -16vw;
   }
 `;
 

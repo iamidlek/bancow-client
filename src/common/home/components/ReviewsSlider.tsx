@@ -1,12 +1,12 @@
 import React from "react";
-import styled, { Keyframes, keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const animate = keyframes`
   0%{
     transform: translateX(0);
   }
   100%{
-    transform: translateX(calc(-480px * 4));
+    transform: translateX(calc(-480px * 4)); // - 카드 너비 * 카드 수 
   }
 `;
 
@@ -30,7 +30,7 @@ const Slider = styled.div`
 const SlideTrack = styled.div<{ delay?: number }>`
   display: flex;
   width: calc(480px * 8); // 카드 너비 * 카드 수 * 2
-  animation: ${animate} 10s linear infinite;
+  animation: ${animate} 26s linear infinite;
   animation-delay: ${(props) => (props.delay ? props.delay + "s" : 0 + "s")};
 `;
 
@@ -131,7 +131,7 @@ const ReviewsSlider = () => {
         </SlideTrack>
       </Slider>
       <Slider>
-        <SlideTrack delay={0.7}>
+        <SlideTrack delay={0.8}>
           <ReviewCard>A</ReviewCard>
           <ReviewCard>B</ReviewCard>
           <ReviewCard>C</ReviewCard>
