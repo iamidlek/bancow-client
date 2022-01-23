@@ -9,6 +9,13 @@ export const SearchArea = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ${props => props.theme.breakpoints.md} {
+    height: 180px;
+  }
+  @media ${props => props.theme.breakpoints.sm} {
+    height: 130px;
+  }
 `;
 
 export const Section = styled.section`
@@ -20,10 +27,12 @@ export const HeadLine4Style = styled(HeadLine4)`
   margin-bottom: 35px;
 
   @media ${props => props.theme.breakpoints.md} {
-    font-size: ;
+    font-size: 25px;
+    margin-bottom: 25px;
   }
   @media ${props => props.theme.breakpoints.sm} {
-    font-size: ;
+    font-size: 18px;
+    margin-bottom: 15px;
   }
 `;
 
@@ -42,8 +51,8 @@ export const SearchForm = styled.form`
     height: 60px;
   }
   @media ${props => props.theme.breakpoints.sm} {
-    width: 160.06px;
-    height: 16.06px;
+    width: 300px;
+    height: 35px;
   }
 `;
 
@@ -52,28 +61,40 @@ export const SearchWrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-right: 35%;
+
+  @media ${props => props.theme.breakpoints.md} {
+    margin-right: 30%;
+  }
+  @media ${props => props.theme.breakpoints.sm} {
+    margin-right: 0;
+  }
 `;
 
 export const AiOutlineSearchStyle = styled(AiOutlineSearch)`
   width: 40px;
   height: 40px;
-  margin: 0 23px 0 20px;
+  margin: 0 20px 0 20px;
 
   @media ${props => props.theme.breakpoints.md} {
-    width: 17.38px;
-    height: 17.38px;
+    width: 30px;
+    height: 30px;
+    margin: 0 12px 0 12px;
   }
   @media ${props => props.theme.breakpoints.sm} {
-    width: 6.98px;
-    height: 6.98px;
+    width: 15px;
+    height: 15px;
+    margin: 0 4px 0 4px;
   }
 `;
 
 export const SearchBar = styled.input`
   border: none;
   width: 382px;
-  &::placeholder {
-    line-height: 34px;
+
+  ::placeholder,
+  ::-webkit-input-placeholder,
+  :-ms-input-placeholder {
+    font-size: 26px;
   }
   &:focus {
     outline: none;
@@ -81,17 +102,21 @@ export const SearchBar = styled.input`
   }
 
   @media ${props => props.theme.breakpoints.md} {
-    width: 166.08px;
-    height: 14.78px;
-    &::placeholder {
-      line-height: 14.78px;
+    width: 300px;
+    height: 20px;
+    ::placeholder,
+    ::-webkit-input-placeholder,
+    :-ms-input-placeholder {
+      font-size: 16px;
     }
   }
   @media ${props => props.theme.breakpoints.sm} {
-    width: 85.16px;
-    height: 7.58px;
-    &::placeholder {
-      line-height: 7.58px;
+    width: 270px;
+    height: 15px;
+    ::placeholder,
+    ::-webkit-input-placeholder,
+    :-ms-input-placeholder {
+      font-size: 10px;
     }
   }
 `;
@@ -101,7 +126,7 @@ const Faq = () => {
   return (
     <SearchArea>
       <Section>
-        <HeadLine4>궁금한 점이 있으신가요?</HeadLine4>
+        <HeadLine4Style>궁금한 점이 있으신가요?</HeadLine4Style>
         <SearchForm>
           <SearchWrapper>
             <AiOutlineSearchStyle />
