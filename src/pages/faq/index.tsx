@@ -16,6 +16,17 @@ export const Section = styled.section`
   text-align: center;
 `;
 
+export const HeadLine4Style = styled(HeadLine4)`
+  margin-bottom: 35px;
+
+  @media ${props => props.theme.breakpoints.md} {
+    font-size: ;
+  }
+  @media ${props => props.theme.breakpoints.sm} {
+    font-size: ;
+  }
+`;
+
 export const SearchForm = styled.form`
   display: flex;
   justify-content: center;
@@ -27,11 +38,12 @@ export const SearchForm = styled.form`
   border-radius: 6px;
 
   @media ${props => props.theme.breakpoints.md} {
-    width: 90%;
-    height: 50px;
+    width: 500px;
+    height: 60px;
   }
   @media ${props => props.theme.breakpoints.sm} {
-    width: 88%;
+    width: 160.06px;
+    height: 16.06px;
   }
 `;
 
@@ -42,28 +54,57 @@ export const SearchWrapper = styled.div`
   margin-right: 35%;
 `;
 
+export const AiOutlineSearchStyle = styled(AiOutlineSearch)`
+  width: 40px;
+  height: 40px;
+  margin: 0 23px 0 20px;
+
+  @media ${props => props.theme.breakpoints.md} {
+    width: 17.38px;
+    height: 17.38px;
+  }
+  @media ${props => props.theme.breakpoints.sm} {
+    width: 6.98px;
+    height: 6.98px;
+  }
+`;
+
 export const SearchBar = styled.input`
   border: none;
   width: 382px;
+  &::placeholder {
+    line-height: 34px;
+  }
   &:focus {
     outline: none;
     text-align: left;
   }
+
+  @media ${props => props.theme.breakpoints.md} {
+    width: 166.08px;
+    height: 14.78px;
+    &::placeholder {
+      line-height: 14.78px;
+    }
+  }
+  @media ${props => props.theme.breakpoints.sm} {
+    width: 85.16px;
+    height: 7.58px;
+    &::placeholder {
+      line-height: 7.58px;
+    }
+  }
 `;
 
+// TODO: Form에 검색 api 연결
 const Faq = () => {
   return (
     <SearchArea>
       <Section>
-        <HeadLine4 style={{ marginBottom: '35px' }}>
-          궁금한 점이 있으신가요?
-        </HeadLine4>
-        {/* // TODO: api 연결 */}
+        <HeadLine4>궁금한 점이 있으신가요?</HeadLine4>
         <SearchForm>
           <SearchWrapper>
-            <AiOutlineSearch
-              style={{ fontSize: '34px', margin: '0 23px 0 20px' }}
-            />
+            <AiOutlineSearchStyle />
             <label htmlFor='keyword'></label>
             <SearchBar
               type='text'
