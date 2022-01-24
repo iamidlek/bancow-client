@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeadLine2 = styled.h2`
-  font-style: Bold;
+  font-weight: Bold;
   font-size: 58px;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -10,14 +10,14 @@ export const HeadLine2 = styled.h2`
   }
 `;
 export const HeadLine3 = styled.h3`
-  font-style: Bold;
+  font-weight: Bold;
   font-size: 47px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 19px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size:16px;
+    font-size: 16px;
   }
 `;
 
