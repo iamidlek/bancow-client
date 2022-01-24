@@ -193,11 +193,11 @@ export const Circle = styled.div`
   height: 34px;
   border-radius: 50%;
   background: ${(props) => props.theme.colors.dark};
-  transform: translate(4px, 4px);
+  transform: translate(4px, 3.5px);
   transition: all 0.2s linear;
   &.dark {
     background: ${(props) => props.theme.colors.white};
-    transform: translate(40px, 4px);
+    transform: translate(40px, 3.5px);
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 26px;
