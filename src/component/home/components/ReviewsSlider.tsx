@@ -10,12 +10,24 @@ const animate = keyframes`
   }
 `;
 
+const animatesm = keyframes`
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-346px * 4)); // - 카드 너비 * 카드 수 
+  }
+`;
+
 const SlideGroup = styled.div`
   position: absolute;
   width: 100%;
   bottom: 0;
   display: flex;
   flex-direction: column;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    top: 408px;
+  }
 `;
 
 const Slider = styled.div`
@@ -32,6 +44,13 @@ const SlideTrack = styled.div<{ delay?: number }>`
   width: calc(480px * 8); // 카드 너비 * 카드 수 * 2
   animation: ${animate} 26s linear infinite;
   animation-delay: ${(props) => (props.delay ? props.delay + "s" : 0 + "s")};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: calc(346px * 8);
+    animation: ${animatesm} 26s linear infinite;
+    animation-delay: ${(props) =>
+      props.delay ? props.delay * 4 + "s" : 0 + "s"};
+  }
 `;
 
 const ReviewCard = styled.div`
@@ -42,6 +61,11 @@ const ReviewCard = styled.div`
   background: white;
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 346px;
+    height: 280px;
+  }
 `;
 
 const CardHeader = styled.div`
@@ -61,6 +85,10 @@ const Profile = styled.div`
 const Title = styled.div`
   font-size: 26px;
   line-height: 1.5;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 22px;
+  }
 `;
 const Content = styled.div`
   width: 96%;
@@ -69,6 +97,12 @@ const Content = styled.div`
   font-size: 20px;
   line-height: 1.4;
   color: ${(props) => props.theme.colors.gray1};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 90%;
+    padding-top: 30px;
+    font-size: 18px;
+  }
 `;
 
 const ReviewsSlider = () => {
