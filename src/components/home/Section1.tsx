@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import AppleApp from "../../common/AppleApp";
 import GoogleApp from "../../common/GoogleApp";
@@ -220,11 +220,7 @@ const Section1 = () => {
   };
 
   return (
-    <Section
-      style={{
-        overflow: "hidden",
-      }}
-    >
+    <Section style={{ overflow: "hidden" }}>
       <MainImgBox />
       <Container>
         <Box>
