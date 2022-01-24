@@ -1,9 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import QstButton from "./components/QstButton";
+
+export const Wrapper = styled.div`
+  margin: 0 auto;
+`
 
 const Question = () => {
   return (
-    <h1>Question</h1>
+    <>
+    <Wrapper>
+      <QstButton />
+      <QstButton />
+      <QstButton />
+      <QstButton />
+      <QstButton />
+      <QstButton />
+    </Wrapper>
+    </>
   )
 }
 
