@@ -1,7 +1,16 @@
-version: "3"
+version: "4"
 services:
   nextjs:
     build: ./
+    volumes:
+      - /usr/app/node_modules
+      - .:/usr/app
+    ports:
+      - 3000:3000
+    environment: 
+      - NODE_ENV=development 
+      - CHOKIDAR_USEPOLLING=true
+    command: npm run dev
   nginx:
     build: ./nginx
     ports:
