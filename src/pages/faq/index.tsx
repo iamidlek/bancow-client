@@ -1,5 +1,5 @@
-import React from 'react';
-import SearchSection from '../../components/faq/SearchSection';
+import React from "react";
+import SearchSection from "../../component/faq/SearchSection";
 
 const Faq = () => {
   return (
