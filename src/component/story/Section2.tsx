@@ -147,12 +147,20 @@ export const SectionBox = styled.div`
     }
   `
   export const ResponsiveBoxMobile = styled.div`
-      display:none;
-        @media ${(props) => props.theme.breakpoints.md} {
+    display:none;
+    @media ${(props) => props.theme.breakpoints.md} {
       display:block;
   }
     @media ${(props) => props.theme.breakpoints.sm} {
       display:block;
+    }
+  `
+  export const ResponsiveText = styled.div`
+    @media ${(props) => props.theme.breakpoints.md} {
+      font-weight: 400;
+  }
+    @media ${(props) => props.theme.breakpoints.sm} {
+      font-weight:400;
     }
   `
 const Section2 = () => {
@@ -160,16 +168,24 @@ const Section2 = () => {
     <SectionBox>
       <Card>
         <TextBox mt={170} ml={507}>
-         <HeadLine3>한우자산플랫폼 뱅카우는<br/><span>농가와 소비자를 투자로 연결해요</span></HeadLine3>
+         <HeadLine3>
+          <ResponsiveText>
+            한우자산플랫폼 뱅카우는<br/><span>농가와 소비자를 투자로 연결해요</span>
+           </ResponsiveText> 
+           </HeadLine3>
         </TextBox>
-        <ImgProducer src="/storypage1-1.svg” alt=“producer" />
-        <ImgConsumer src="/storypage1-2.svg” alt=“consumer" />
+        <ImgProducer src="/storypage1-1.svg" alt="producer" />
+        <ImgConsumer src="/storypage1-2.svg" alt="consumer" />
       </Card>
       <Card>
         <TextBox mt={170} ml={546}>
-         <HeadLine3>한우가 다 자라면<br/><span>생산자와 소비자가 수익을 공유해요</span></HeadLine3>
+         <HeadLine3>
+          <ResponsiveText> 
+            한우가 다 자라면<br/><span>생산자와 소비자가 수익을 공유해요</span>
+          </ResponsiveText>
+          </HeadLine3>
         </TextBox>
-      <ImgSharingProfit src="/storypage2.svg” alt=“sharingprofit"/>
+      <ImgSharingProfit src="/storypage2.svg" alt="sharingprofit"/>
       </Card>
       <ResponsiveBoxWeb>
         <Card>
@@ -178,22 +194,28 @@ const Section2 = () => {
           </TextBox>
           <TextBox mt={96} ml={108}>
             <HeadLine3>소비자는<br/><span>새로운 투자시장에 진출하는 기회를 가져요</span></HeadLine3>
-          <ImgProductivity src="/storypage3-1.svg” alt=“higher productivity"/>
-          <ImgConsumer2 src="/storypage3-2.svg” alt=“consumer in a new investment market"/>
+          <ImgProductivity src="/storypage3-1.svg" alt="higher productivity"/>
+          <ImgConsumer2 src="/storypage3-2.svg" alt="consumer in a new investment market"/>
           </TextBox>
         </Card>
       </ResponsiveBoxWeb>
       <ResponsiveBoxMobile>
       <Card>
           <TextBox mt={56} ml={450}>
-            <HeadLine3>농가는<br/><span>생산비 부담을 줄이고 생산성을 높이고,</span></HeadLine3>
+            <HeadLine3>
+              <ResponsiveText>
+              농가는<br/><span>생산비 부담을 줄이고 생산성을 높이고,</span>
+              </ResponsiveText>
+              </HeadLine3>
           </TextBox>
-          <ImgProductivity src="/storypage3-1.svg” alt=“higher productivity"/>
+          <ImgProductivity src="/storypage3-1.svg" alt="higher productivity"/>
         </Card>
         <Card>
           <TextBox mt={96} ml={108}>
             <HeadLine3>
+              <ResponsiveText>
                 소비자는<br/><span>새로운 투자시장으로의 기회를 가져요</span>
+              </ResponsiveText>
             </HeadLine3>
         <ImgConsumer2 src="/storypage3-2.svg" alt="consumer in a new investment market"/>
         </TextBox>
