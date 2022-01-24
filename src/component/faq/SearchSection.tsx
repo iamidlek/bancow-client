@@ -122,7 +122,7 @@ export const SearchBar = styled.input`
 `;
 
 // TODO: Form에 검색 api 연결
-const Faq = () => {
+const Search = () => {
   return (
     <SearchArea>
       <Section>
@@ -143,4 +143,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default Search;
