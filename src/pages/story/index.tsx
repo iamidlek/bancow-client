@@ -3,6 +3,7 @@ import React from "react";
 import Section1 from "../../component/story/Section1";
 import Section2 from "../../component/story/Section2";
 
+
 const Story: NextPage = () => {
   return (
     <>
