@@ -10,12 +10,10 @@ export const SectionBox = styled.div`
   justify-content:center;
   align-items:center;
   text-align:center;
-
   @media ${(props) => props.theme.breakpoints.md} {
     height:113px;
     background-color:${(props)=>props.theme.colors.point};
   }
-
   @media ${(props) => props.theme.breakpoints.sm} {
     height:99px;
   }
@@ -28,7 +26,6 @@ export const TextBox = styled.div`
     width:330px;
     height:60px;
   }
-
   @media ${(props) => props.theme.breakpoints.sm} {
     width:274px;
     height:46px;
@@ -44,4 +41,4 @@ const Section1 = () => {
   )
 }
 
-export default Section1;
+export default Section1; 
