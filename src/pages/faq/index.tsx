@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
+import SearchSection from '../../components/faq/SearchSection';
 
 const Faq = () => {
-  return <div>faq</div>;
+  return (
+    <>
+      <SearchSection />
+    </>
+  );
 };
 
 export default Faq;
