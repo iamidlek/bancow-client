@@ -14,8 +14,10 @@ export const HeadLine3 = styled.h3`
   font-size: 47px;
 
   @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 19px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    font-size:16px;
   }
 `;
 

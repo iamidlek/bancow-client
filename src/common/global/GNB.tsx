@@ -7,6 +7,8 @@ import Logo from "../Logo";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export const NavBox = styled.div`
+  background-color: ${(props) => props.theme.colors.white};
+
   @media ${(props) => props.theme.breakpoints.md} {
     background-color: ${(props) => props.theme.colors.point};
   }
