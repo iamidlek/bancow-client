@@ -99,6 +99,8 @@ export const Img2 = styled.div`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 300px;
+    background-size: 144%;
+    background-position-y: 19%;
     margin-bottom: 40px;
   }
 `;
@@ -130,6 +132,9 @@ export const Text = styled.div`
   @media screen and (max-width: 980px) {
     margin-left: 0px;
     margin-bottom: 40px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 24px;
   }
 `;
 

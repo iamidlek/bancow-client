@@ -106,6 +106,10 @@ export const TextBox = styled.div`
     flex-direction: column;
     height: 400px;
   }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 600px;
+    position: relative;
+  }
 `;
 
 export const GrayBox = styled.div`
@@ -142,6 +146,10 @@ export const GrayBox2 = styled.div`
     align-items: center;
     height: 460px;
     margin-right: 0px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 600px;
+    position: relative;
   }
 `;
 
@@ -223,7 +231,7 @@ export const Text3 = styled.div`
   }
 `;
 
-const Section4 = () => {
+const Section5 = () => {
   return (
     <Section>
       <Row mt={110}>
@@ -274,4 +282,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default Section5;
