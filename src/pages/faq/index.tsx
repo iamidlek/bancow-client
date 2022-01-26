@@ -1,12 +1,12 @@
 import React from "react";
 import SearchSection from "../../component/faq/SearchSection";
-import QuestionSection from '../../component/faq/QuestionSection'
+import CategorySection from '../../component/faq/CategorySection'
 
 const Faq = () => {
   return (
     <>
       <SearchSection />
-      <QuestionSection />
+      <CategorySection />
     </>
   );
 };
