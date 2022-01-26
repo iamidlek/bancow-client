@@ -10,6 +10,8 @@ export const SectionBox = styled.div`
   justify-content:center;
   align-items:center;
   text-align:center;
+  
+  
   @media ${(props) => props.theme.breakpoints.md} {
     height: 113px;
     background-color: ${(props) => props.theme.colors.point};
