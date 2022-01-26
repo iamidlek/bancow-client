@@ -12,7 +12,7 @@ export const SectionBox = styled.div`
     padding-top:60px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    height:588px;
+    height:768px;
     padding-top: 42px;
   }
 `;
@@ -31,10 +31,14 @@ export const SectionBox = styled.div`
     margin-bottom: 23px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    width:308px;
+    width:290px;
     height:158px;
     margin-bottom: 17px;
+  @media only screen and (max-width:290px){
+    width:100%;
   }
+  }
+
   `
   export const TextBox = styled.div<{ mt?: number , ml?: number}>`
     margin-top: ${({mt}) => (mt? mt : 0 )}px;
@@ -161,6 +165,9 @@ export const SectionBox = styled.div`
   }
     @media ${(props) => props.theme.breakpoints.sm} {
       font-weight:400;
+      @media only screen and (max-width:290px){
+      font-size:12px;
+    } 
     }
   `
 const Section2 = () => {
