@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
+import { HeadLine5 } from "../../common/typography";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 export const Wrapper = styled.div`
@@ -8,10 +9,10 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 32px;
+  margin-top: 24px;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    margin-top: 16.06px;
+    margin-top: 18px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -31,6 +32,7 @@ export const CategoryBtn = styled.li`
   border: 0.5px solid rgba(0, 75, 250, 0.5);
   border-radius: 6px;
   font-size: 23px;
+  color: ${(props) => props.theme.colors.gray1};
   background-color: ${(props) => props.theme.colors.white};
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -61,10 +63,6 @@ export const CategoryDrop = styled.div`
   }
 `
 
-export const CategorySpan = styled.span`
-  
-`
-
 export const OptionUl = styled.ul`
   visibility: ${(props) => props.show ? 'visible': 'hidden'};
   display: inline-block;
@@ -87,6 +85,7 @@ export const OptionLi = styled.li`
   color: ${(props) => props.theme.colors.subPoint};
   height: 40px;
   line-height: 40px;
+  padding: 0px 16px;
 `
 
 export const RiArrowDropDownLineStyle = styled(RiArrowDropDownLine)`
