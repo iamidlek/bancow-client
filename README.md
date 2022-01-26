@@ -1,3 +1,21 @@
+## 1) Front Preferences
+- Docker Download
+  - https://www.docker.com/products/docker-desktop
+
+```bash
+git clone https://github.com/2022-bancow-teamProject/bancow-client.git
+cd /bancow-client
+docker compose up -d
+```
+## 2) Web Test 
+```bash
+# browser such as chrome search to input 
+localhost/
+```
+
+--------
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
