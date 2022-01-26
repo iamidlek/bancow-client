@@ -5,15 +5,16 @@ export const Section = styled.div`
   height: 1070px;
   overflow: hidden;
   transition: ease all 0.5s;
+  //Todo 차트에 따라 변경 가능성 있음
   /* @media screen and (max-width: 1350px) {
     height: 1860px;
   }
   @media screen and (max-width: 850px) {
     height: 1700px;
-  }
+  }*/
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 1240px;
-  } */
+    height: 900px;
+  }
 `;
 
 export const Row = styled.div<{ mt?: number }>`
