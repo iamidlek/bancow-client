@@ -29,7 +29,7 @@ export const darkTheme: DefaultTheme = {
     point: "#0048FA",
     subPoint: "#6B96FF",
     subGray: "#E8E8E8",
-    gray1: "#AAAAB1",
+    gray1: "#7A7A81",
     gray2: "#AAAAB1",
     gray3: "#B9B9C1",
     gray4: "#D5D5DB",
