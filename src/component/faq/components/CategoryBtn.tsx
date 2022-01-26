@@ -1,7 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
 
-export const CategoryBtn = styled.button`
+export const CategoryBtn = styled.li`
+  display: inline-block;
+  padding: 10px;
+  margin-right: 15px;
   border: 0.5px solid rgba(0, 75, 250, 0.5);
   border-radius: 6px;
   width: 63px;
@@ -12,23 +15,24 @@ export const CategoryBtn = styled.button`
   @media ${(props) => props.theme.breakpoints.md} {
     border: 0.5px solid rgba(0, 75, 250, 0.5);
     border-radius: 6px;
-    width: 28px;
-    height: 23.48px;
-    font-size: 10px;
+    width: 46px;
+    height: 35px;
+    font-size: 18px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    border: 0.11px solid rgba(0, 75, 250, 0.5);
-    border-radius: 1.34px;
-    width: 14.04px;
-    height: 12.04px;
-    font-size: 10px;
+    display: none;
+
   }
 `
 
 const QstButton = () => {
+  const CATEGORYDATA = ['전체', '구매하기', '사육중', '출하 및 경매', '회원 관련']
+
   return (
-    <CategoryBtn>btn</CategoryBtn>
+    {CATEGORYDATA.map(cate => (
+      <CategoryBtn>{cate}</CategoryBtn>
+     ))}
   )
 }
 
