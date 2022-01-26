@@ -9,9 +9,6 @@ export const Section = styled.div`
   @media ${(props) => props.theme.breakpoints.md} {
     height: 1440px;
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    height: 1400px;
-  }
 `;
 
 export const Row = styled.div<{ mt?: number }>`
@@ -133,7 +130,7 @@ export const TextBox = styled.div`
   display: flex;
   align-items: center;
   padding-left: 90px;
-
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   @media screen and (max-width: 1340px) {
     padding-left: 80px;
   }
@@ -183,6 +180,7 @@ export const TextBox3 = styled.div`
   align-items: center;
   margin-left: 30px;
   position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   @media ${(props) => props.theme.breakpoints.sm} {
     height: 171px;
     margin-left: 0px;

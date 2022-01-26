@@ -42,7 +42,7 @@ export const TextBox = styled.div`
 `;
 
 export const HeadLine2 = styled.div`
-  font-style: Bold;
+  font-weight: Bold;
   font-size: 58px;
   margin-top: 16px;
   margin-bottom: 80px;
