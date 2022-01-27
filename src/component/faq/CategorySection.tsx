@@ -104,7 +104,7 @@ export const RiArrowDropDownLineStyle = styled(RiArrowDropDownLine)`
 `
 // TODO: 백오피스에서 faq crud 관리(api 호출)
 
-const Question = () => {
+const Category = () => {
   // 카테고리 버튼 데이터를 임의로 넣어서 렌더링
   const CATEGORYDATA = ['전체', '구매하기', '사육중', '출하 및 경매', '회원 관련'];
   
@@ -136,4 +136,4 @@ const Question = () => {
   )
 }
 
-export default Question;
+export default Category;
