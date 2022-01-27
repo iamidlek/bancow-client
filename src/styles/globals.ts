@@ -35,5 +35,11 @@ export const GlobalStyles = createGlobalStyle<DefaultTheme>`
   li{
     list-style: none;
   }
+  select{
+    appearance: none;
+    -webkit-appearance: none; /* 사파리, 크롬 하위버전용 */
+    -moz-appearance: none; /* 사파리, 크롬 하위버전용 */
+  }
+  select::-ms-expand{ display: none; } /* 익스플로러용 */
 
 `;

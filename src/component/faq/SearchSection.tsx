@@ -91,11 +91,15 @@ export const SearchBar = styled.input`
   border: none;
   width: 382px;
 
-  ::placeholder,
+  ::placeholder {
+    font-size: 20px;
+  }
+
   ::-webkit-input-placeholder,
   :-ms-input-placeholder {
-    font-size: 26px;
+    font-size: 20px;
   }
+
   &:focus {
     outline: none;
     text-align: left;
@@ -104,7 +108,9 @@ export const SearchBar = styled.input`
   @media ${(props) => props.theme.breakpoints.md} {
     width: 300px;
     height: 20px;
-    ::placeholder,
+    ::placeholder {
+      font-size: 16px;
+    }
     ::-webkit-input-placeholder,
     :-ms-input-placeholder {
       font-size: 16px;
@@ -112,17 +118,19 @@ export const SearchBar = styled.input`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 270px;
-    height: 15px;
-    ::placeholder,
+    height: 16px;
+    ::placeholder{
+      font-size: 12px;
+    }
     ::-webkit-input-placeholder,
     :-ms-input-placeholder {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 `;
 
 // TODO: Form에 검색 api 연결
-const Faq = () => {
+const Search = () => {
   return (
     <SearchArea>
       <Section>
@@ -143,4 +151,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default Search;
