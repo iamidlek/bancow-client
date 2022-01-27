@@ -238,7 +238,7 @@ const Section1 = () => {
           <Link href="/howto">
             <a>
               <HeadLine5>
-                이용방법 보러가기 <IoIosArrowForward />
+                자세히 보러가기 <IoIosArrowForward />
               </HeadLine5>
             </a>
           </Link>

@@ -20,5 +20,15 @@ declare module "styled-components" {
       sm: string;
       md: string;
     };
+    alt: {
+      backgroud1: string;
+      backgroud2: string;
+      backgroud3: string;
+      backgroud4: string;
+      backgroud5: string;
+      backgroud6: string;
+      text1: string;
+      text2: string;
+    };
   }
 }

@@ -113,7 +113,7 @@ const ReviewsSlider = () => {
           <ReviewCard>
             <CardHeader>
               <Profile />
-              <Title>제목입니다</Title>
+              <Title>제목입니다제목입니다</Title>
             </CardHeader>
             <Content>
               주변에 한우목장들이 있어 산업이 유망하다고 알고는 있었는데, 저
@@ -123,44 +123,72 @@ const ReviewsSlider = () => {
           <ReviewCard>
             <CardHeader>
               <Profile />
-              <Title>제목입니다</Title>
+              <Title>제목입니다제목입니다제목입니다</Title>
             </CardHeader>
-          </ReviewCard>
+            <Content>
+              주변에 한우목장들이 있어 산업이 유망하다고 알고는 있었는데, 저
+              같은 일반 투자자도 이제 투자가 가능해졌네요.
+            </Content>
+          </ReviewCard>{" "}
           <ReviewCard>
             <CardHeader>
               <Profile />
-              <Title>제목입니다</Title>
+              <Title>제목입니다제목입니다</Title>
             </CardHeader>
-          </ReviewCard>
+            <Content>
+              주변에 한우목장들이 있어 산업이 유망하다고 알고는 있었는데, 저
+              같은 일반 투자자도 이제 투자가 가능해졌네요.
+            </Content>
+          </ReviewCard>{" "}
           <ReviewCard>
             <CardHeader>
               <Profile />
-              <Title>제목입니다</Title>
+              <Title>제목입니다제목입니다</Title>
             </CardHeader>
-          </ReviewCard>
+            <Content>
+              주변에 한우목장들이 있어 산업이 유망하다고 알고는 있었는데, 저
+              같은 일반 투자자도 이제 투자가 가능해졌네요.
+            </Content>
+          </ReviewCard>{" "}
           <ReviewCard>
             <CardHeader>
               <Profile />
-              <Title>제목입니다</Title>
+              <Title>제목입니다제목입니다</Title>
             </CardHeader>
-          </ReviewCard>
+            <Content>
+              주변에 한우목장들이 있어 산업이 유망하다고 알고는 있었는데, 저
+              같은 일반 투자자도 이제 투자가 가능해졌네요.
+            </Content>
+          </ReviewCard>{" "}
           <ReviewCard>
             <CardHeader>
               <Profile />
-              <Title>제목입니다</Title>
+              <Title>제목입니다제목입니다</Title>
             </CardHeader>
-          </ReviewCard>
+            <Content>
+              주변에 한우목장들이 있어 산업이 유망하다고 알고는 있었는데, 저
+              같은 일반 투자자도 이제 투자가 가능해졌네요.
+            </Content>
+          </ReviewCard>{" "}
           <ReviewCard>
             <CardHeader>
               <Profile />
-              <Title>제목입니다</Title>
+              <Title>제목입니다제목입니다</Title>
             </CardHeader>
-          </ReviewCard>
+            <Content>
+              주변에 한우목장들이 있어 산업이 유망하다고 알고는 있었는데, 저
+              같은 일반 투자자도 이제 투자가 가능해졌네요.
+            </Content>
+          </ReviewCard>{" "}
           <ReviewCard>
             <CardHeader>
               <Profile />
-              <Title>제목입니다</Title>
+              <Title>제목입니다제목입니다</Title>
             </CardHeader>
+            <Content>
+              주변에 한우목장들이 있어 산업이 유망하다고 알고는 있었는데, 저
+              같은 일반 투자자도 이제 투자가 가능해졌네요.
+            </Content>
           </ReviewCard>
         </SlideTrack>
       </Slider>
