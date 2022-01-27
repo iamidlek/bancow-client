@@ -4,7 +4,6 @@ import Section1 from "../../component/story/Section1";
 import Section2 from "../../component/story/Section2";
 import Section3 from "../../component/story/Section3";
 
-
 const Story: NextPage = () => {
   return (
     <>
