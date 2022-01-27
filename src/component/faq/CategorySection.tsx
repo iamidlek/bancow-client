@@ -1,7 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import { HeadLine5 } from "../../common/typography";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 export const Wrapper = styled.div`
@@ -28,16 +26,20 @@ export const CategoryUl = styled.ul`
 export const CategoryBtn = styled.li`
   display: inline-block;
   padding: 10px;
-  margin-right: 15px;
-  border: 0.5px solid rgba(0, 75, 250, 0.5);
+  margin-right: 16px;
+  border: 0.5px solid ${(props) => props.theme.colors.gray1};
   border-radius: 6px;
-  font-size: 23px;
-  color: ${(props) => props.theme.colors.gray1};
+  font-size: 20px;
+  color: ${(props) =>  props.theme.colors.gray1};
   background-color: ${(props) => props.theme.colors.white};
+  cursor: pointer;
+
+  &.active {
+    border: 0.5px solid ${(props) => props.theme.colors.subPoint};
+    color: ${(props) => props.theme.colors.subPoint}
+  }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    border: 0.5px solid rgba(0, 75, 250, 0.5);
-    border-radius: 6px;
     font-size: 18px;
   }
 
@@ -62,9 +64,12 @@ export const CategoryDrop = styled.div`
     align-items: center;
   }
 `
+interface showProps {
+  show: boolean;
+}
 
-export const OptionUl = styled.ul`
-  visibility: ${(props) => props.show ? 'visible': 'hidden'};
+export const OptionUl = styled.ul<showProps>`
+  visibility: ${(props) => props.show ? 'visible': 'hidden'}; 
   display: inline-block;
   position: absolute;
   top: 26.5%;
@@ -82,10 +87,15 @@ export const OptionUl = styled.ul`
 `
 
 export const OptionLi = styled.li`
-  color: ${(props) => props.theme.colors.subPoint};
+  color: ${(props) => props.theme.colors.gray1};
   height: 40px;
   line-height: 40px;
   padding: 0px 16px;
+
+  &.active {
+    background-color: rgb(232, 243, 255);
+    color: ${(props) => props.theme.colors.subPoint};
+  }
 `
 
 export const RiArrowDropDownLineStyle = styled(RiArrowDropDownLine)`
@@ -97,7 +107,9 @@ export const RiArrowDropDownLineStyle = styled(RiArrowDropDownLine)`
 const Question = () => {
   // 카테고리 버튼 데이터를 임의로 넣어서 렌더링
   const CATEGORYDATA = ['전체', '구매하기', '사육중', '출하 및 경매', '회원 관련'];
+  
   const [showCategory, setShowCategory] = useState(false);
+  const [selectCategory, setSelectCategory] = useState<string>('curr');
 
   const optionClick = () => {
     // category에 맞는 질문 렌더링, style 적용
@@ -106,14 +118,14 @@ const Question = () => {
   <>
     <Wrapper>
       <CategoryUl>
-      {CATEGORYDATA.map(cate => (
-        <CategoryBtn>{cate}</CategoryBtn>
-      ))}
+      {CATEGORYDATA.map((cate, i) => (
+        <CategoryBtn className={`${selectCategory === cate ? 'active' : ''}`} key={i} onClick={() => {setSelectCategory(cate)}}>{cate}</CategoryBtn>
+        ))}
         <CategoryDrop onClick={() => {setShowCategory(!showCategory)}}>
           <span>전체</span>
           <OptionUl show={showCategory}>   
-          {CATEGORYDATA.map(cate => (
-              <OptionLi onClick={optionClick}>{cate}</OptionLi>
+          {CATEGORYDATA.map((cate, i) => (
+              <OptionLi className={`${selectCategory === cate ? 'active' : ''}`} key={i} onClick={() => {setSelectCategory(cate)}}>{cate}</OptionLi>
             ))}
           </OptionUl>
           <RiArrowDropDownLineStyle />
