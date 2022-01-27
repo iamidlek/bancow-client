@@ -119,13 +119,13 @@ const Question = () => {
     <Wrapper>
       <CategoryUl>
       {CATEGORYDATA.map((cate, i) => (
-        <CategoryBtn className={`${selectCategory === cate ? 'active' : ''}`} key={i} onClick={() => {setSelectCategory(cate)}}>{cate}</CategoryBtn>
+        <CategoryBtn className={`${i === 0 ? 'active' : ''} ${selectCategory === cate ? 'active' : ''}`} key={i} onClick={() => {setSelectCategory(cate)}}>{cate}</CategoryBtn>
         ))}
         <CategoryDrop onClick={() => {setShowCategory(!showCategory)}}>
           <span>전체</span>
           <OptionUl show={showCategory}>   
           {CATEGORYDATA.map((cate, i) => (
-              <OptionLi className={`${selectCategory === cate ? 'active' : ''}`} key={i} onClick={() => {setSelectCategory(cate)}}>{cate}</OptionLi>
+              <OptionLi className={`${i === 0 ? 'active' : ''} ${selectCategory === cate ? 'active' : ''}`} key={i} onClick={() => {setSelectCategory(cate)}}>{cate}</OptionLi>
             ))}
           </OptionUl>
           <RiArrowDropDownLineStyle />
