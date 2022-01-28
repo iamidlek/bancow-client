@@ -114,6 +114,8 @@ const Category = () => {
   const optionClick = () => {
     // category에 맞는 질문 렌더링, style 적용
   }
+
+  // TODO: 전체 버튼은 항상 활성화 되는데, 나머지 버튼 누를 때도 활성화 되는 이슈가 있음
   return (
   <>
     <Wrapper>
