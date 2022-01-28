@@ -10,14 +10,15 @@ export const Section = styled.div`
   padding: 100px 0;
   background-color: ${(props) => props.theme.alt.backgroud1};
   @media ${(props) => props.theme.breakpoints.md} {
-    height: 834px;
+    height: 800px;
+    padding-bottom: 0;
   }
   @media screen and (max-width: 870px) {
-    height: 934px;
+    height: 900px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 50px 0;
-    height: 960px;
+    /* padding: 50px 0; */
+    height: 980px;
   }
 `;
 
