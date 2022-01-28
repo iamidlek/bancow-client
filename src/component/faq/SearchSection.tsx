@@ -119,7 +119,7 @@ export const SearchBar = styled.input`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 270px;
     height: 16px;
-    ::placeholder{
+    ::placeholder {
       font-size: 12px;
     }
     ::-webkit-input-placeholder,
