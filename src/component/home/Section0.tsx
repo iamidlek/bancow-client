@@ -1,0 +1,43 @@
+import React from "react";
+import ReviewsSlider from "./components/ReviewsSlider";
+import ModeToggle from "./components/ModeToggle";
+import DetailLink from "./components/DetailLink";
+import {
+  MainImgBox,
+  Section,
+  MainText,
+  MainTextSmall,
+  Container,
+  Box
+} from "./Section0Style";
+import { Emphasis } from "../../common/typography";
+import AppLinkBox from "../../common/AppLinkBox";
+
+const Section1 = () => {
+  return (
+    <Section>
+      <MainImgBox />
+      <Container>
+        <Box>
+          <MainText>
+            누구나
+            <br />
+            <Emphasis>4만원</Emphasis>부터
+            <br />
+            <Emphasis>한우</Emphasis>를<br />
+            소유할 수 있다고요?
+          </MainText>
+          <MainTextSmall>
+            누구나 4만원부터 한우를 소유할 수 있다고요?
+          </MainTextSmall>
+          <AppLinkBox />
+          <DetailLink />
+          <ModeToggle />
+        </Box>
+      </Container>
+      <ReviewsSlider />
+    </Section>
+  );
+};
+
+export default Section1;
