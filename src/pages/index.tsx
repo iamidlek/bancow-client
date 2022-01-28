@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Footer from "../common/global/Footer";
+import Section0 from "../component/home/Section0";
 import Section1 from "../component/home/Section1";
 import Section2 from "../component/home/Section2";
 import Section3 from "../component/home/Section3";
@@ -12,6 +13,7 @@ import Section8 from "../component/home/Section8";
 const Home: NextPage = () => {
   return (
     <>
+      <Section0 />
       <Section1 />
       <Section2 />
       <Section3 />
