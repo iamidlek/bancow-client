@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -109,25 +109,32 @@ const Category = () => {
   const CATEGORYDATA = ['전체', '구매하기', '사육중', '출하 및 경매', '회원 관련'];
   
   const [showCategory, setShowCategory] = useState(false);
-  const [selectCategory, setSelectCategory] = useState<string>('curr');
+  const [selectCategory, setSelectCategory] = useState<string>('전체');
 
   const optionClick = () => {
     // category에 맞는 질문 렌더링, style 적용
   }
 
-  // TODO: 전체 버튼은 항상 활성화 되는데, 나머지 버튼 누를 때도 활성화 되는 이슈가 있음
   return (
   <>
     <Wrapper>
       <CategoryUl>
       {CATEGORYDATA.map((cate, i) => (
-        <CategoryBtn className={`${i === 0 ? 'active' : ''} ${selectCategory === cate ? 'active' : ''}`} key={i} onClick={() => {setSelectCategory(cate)}}>{cate}</CategoryBtn>
-        ))}
+            <CategoryBtn
+              className={` ${selectCategory === cate ? "active" : ""}`}
+              key={i}
+              onClick={() => {
+                setSelectCategory(cate);
+              }}
+            >
+              {cate}
+            </CategoryBtn>
+          ))}
         <CategoryDrop onClick={() => {setShowCategory(!showCategory)}}>
           <span>전체</span>
           <OptionUl show={showCategory}>   
           {CATEGORYDATA.map((cate, i) => (
-              <OptionLi className={`${i === 0 ? 'active' : ''} ${selectCategory === cate ? 'active' : ''}`} key={i} onClick={() => {setSelectCategory(cate)}}>{cate}</OptionLi>
+              <OptionLi className={`${selectCategory === cate ? 'active' : ''}`} key={i} onClick={() => {setSelectCategory(cate)}}>{cate}</OptionLi>
             ))}
           </OptionUl>
           <RiArrowDropDownLineStyle />
