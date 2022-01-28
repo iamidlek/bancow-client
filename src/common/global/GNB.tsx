@@ -5,10 +5,10 @@ import { HeadLine6 } from "../typography";
 import styled from "styled-components";
 import Logo from "../Logo";
 import { GiHamburgerMenu } from "react-icons/gi";
+import ModeToggle from "../ModeToggle";
 
 export const NavBox = styled.div`
   background-color: ${(props) => props.theme.colors.white};
-
   @media ${(props) => props.theme.breakpoints.md} {
     background-color: ${(props) => props.theme.colors.point};
   }
@@ -34,7 +34,6 @@ export const Nav = styled.nav`
 export const MenuArea = styled.div`
   display: flex;
   gap: 34px;
-
   div {
     display: none;
   }
@@ -93,6 +92,7 @@ const GNB = () => {
               <HeadLine6>입점문의</HeadLine6>
             </a>
           </Link>
+          <ModeToggle />
           <div>
             <GiHamburgerMenu
               style={{ color: "white", fontSize: "28px", marginTop: "2px" }}
