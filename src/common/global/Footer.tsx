@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import AppleApp from "../AppleApp";
-import GoogleApp from "../GoogleApp";
+import AppLinkBox from "../AppLinkBox";
 
 export const Section = styled.div`
   position: relative;
   height: 900px;
   overflow: hidden;
   transition: ease all 0.5s;
+  padding: 100px 0;
+  background-color: ${(props) => props.theme.alt.backgroud1};
   @media ${(props) => props.theme.breakpoints.md} {
     height: 834px;
   }
@@ -15,33 +16,28 @@ export const Section = styled.div`
     height: 934px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 50px 0;
     height: 960px;
   }
 `;
 
-export const Row = styled.div<{ mt?: number }>`
+export const Container = styled.div`
   width: 80%;
   margin: 0 auto;
-  margin-top: ${({ mt }) => (mt ? mt + "px" : 0 + "px")};
+  padding-left: 6%;
+  display: flex;
+  flex-direction: column;
   @media ${(props) => props.theme.breakpoints.md} {
-    display: flex;
     justify-content: center;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin-top: ${({ mt }) => (mt ? mt / 2 + "px" : 0 + "px")};
-  }
-`;
-
-export const TextBox = styled.div`
-  margin-left: 10%;
-  @media ${(props) => props.theme.breakpoints.md} {
-    margin-left: 0;
+    align-items: center;
+    padding-left: 0;
   }
 `;
 
 export const HeadLine3B = styled.h3`
   font-weight: bold;
   font-size: 44px;
+  color: ${(props) => props.theme.alt.text1};
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 36px;
   }
@@ -53,24 +49,12 @@ export const HeadLine3B = styled.h3`
 
 export const HeadLine3 = styled.h3`
   font-size: 44px;
+  color: ${(props) => props.theme.alt.text1};
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 36px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     text-align: center;
-  }
-`;
-
-export const AppLinkBox = styled.div`
-  display: flex;
-  gap: 34px;
-  margin: 36px auto 50px;
-  @media ${(props) => props.theme.breakpoints.md} {
-    gap: 20px;
-    justify-content: center;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    gap: 14px;
   }
 `;
 
@@ -87,7 +71,7 @@ export const Box = styled.div`
   justify-content: space-between;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.md} {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   @media screen and (max-width: 870px) {
     flex-direction: column;
@@ -128,16 +112,11 @@ export const FlexBox = styled.div`
 const Footer = () => {
   return (
     <Section>
-      <Row mt={100}>
-        <TextBox>
-          <HeadLine3>뱅카우로</HeadLine3>
-          <HeadLine3B>한우 투자하러 가볼까요?</HeadLine3B>
-          <AppLinkBox>
-            <GoogleApp />
-            <AppleApp />
-          </AppLinkBox>
-        </TextBox>
-      </Row>
+      <Container>
+        <HeadLine3>뱅카우로</HeadLine3>
+        <HeadLine3B>한우 투자하러 가볼까요?</HeadLine3B>
+        <AppLinkBox />
+      </Container>
       <BlueBox>
         <Box>
           <div>
