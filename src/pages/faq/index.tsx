@@ -1,6 +1,6 @@
 import React from "react";
 import SearchSection from "../../component/faq/SearchSection";
-import CategorySection from '../../component/faq/CategorySection'
+import CategorySection from "../../component/faq/CategorySection";
 
 const Faq = () => {
   return (
