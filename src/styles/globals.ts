@@ -36,23 +36,29 @@ export const GlobalStyles = createGlobalStyle<DefaultTheme>`
   li{
     list-style: none;
   }
+
   .swiper{
     width:100%;
-    height:500px;
+    height:600px;
+    // background:pink;
     padding:0 30px;
     @media ${(props) => props.theme.breakpoints.md} {
       // margin-top:-40px;
     }
     @media ${(props) => props.theme.breakpoints.sm} {
       height:460px;
+      margin-top:-40px;
       // padding:0 50px;
+    }
+    @media screen and (max-width:350px){
+      padding:0 10px; 
+      margin-top:-40px;
     }
   }
   .swiper-slide{
     background:#fff;
     max-width:300px;
-    // min-width: 240px;
-    height:70%;
+    height:62%;
     border-radius:30px;
     margin-top:80px;
     box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.2);
@@ -70,12 +76,23 @@ export const GlobalStyles = createGlobalStyle<DefaultTheme>`
     align-items: center;
     @media ${(props) => props.theme.breakpoints.md} {
       // max-width:200px;
-  
+      min-width:250px;
     }
     @media ${(props) => props.theme.breakpoints.sm} {
       // max-width:280px;
-      // min-width:220px;
+      min-width:220px;
       font-size: 200px;
       height:70%;
     }
+    @media screen and (max-width:350px){
+      min-width:180px;
+    }
+  }
+  select{
+    appearance: none;
+    -webkit-appearance: none; /* 사파리, 크롬 하위버전용 */
+    -moz-appearance: none; /* 사파리, 크롬 하위버전용 */
+  }
+  select::-ms-expand{ display: none; } /* 익스플로러용 */
+
 `;

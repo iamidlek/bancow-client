@@ -169,6 +169,7 @@ export const ResponsiveText = styled.div`
     }
   }
 `;
+
 const Section2 = () => {
   return (
     <SectionBox>

@@ -5,7 +5,10 @@ import ReactPlayer from "react-player";
 
 export const SectionBox = styled.div`
   width: 100%;
+<<<<<<< HEAD
   /* min-width: 290px; */
+=======
+>>>>>>> upstream/develop
   height: fit-content;
   padding-top: 44px;
   background: ${(props) => props.theme.colors.subPoint};

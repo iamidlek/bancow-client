@@ -11,25 +11,31 @@ import SwiperCore, { Scrollbar } from "swiper";
 // install Swiper modules
 SwiperCore.use([Scrollbar]);
 export const SectionBox = styled.div`
+  background: ${(props) => props.theme.alt.backgroud1};
   width: 100%;
-  height: 952px;
+  height: fit-content;
   padding-top: 44px;
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding-bottom: 60px;
   @media ${(props) => props.theme.breakpoints.md} {
-    height: 724px;
+    /* height: 680px; */
+    /* height: 550px; */
+    padding-bottom: 40px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 540px;
+    height: 580px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 20px;
   }
 `;
 
 export const HeadLine2Style = styled(HeadLine2)`
   font-size: 58px;
   font-weight: 700;
+  color: ${(props) => props.theme.alt.text2};
   @media screen and (max-width: 1100px) {
     font-size: 50px;
   }
@@ -39,6 +45,7 @@ export const HeadLine2Style = styled(HeadLine2)`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 14px;
+    letter-spacing: -1.2px;
   }
 `;
 export const BlueFontHead = styled.div`
