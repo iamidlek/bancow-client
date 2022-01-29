@@ -21,7 +21,8 @@
     "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
     "styled-components": "^5.3.3",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "swiper": "^7.4.1"
   },
   "devDependencies": {
     "@types/node": "17.0.10",

@@ -10,8 +10,8 @@ const themeSlice = createSlice({
   reducers: {
     change(state) {
       state.isDark = !state.isDark;
-    },
-  },
+    }
+  }
 });
 export const { change } = themeSlice.actions;
 export default themeSlice.reducer;
