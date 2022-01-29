@@ -38,6 +38,7 @@ export const HeadLine5 = styled.h5`
     font-size: 20px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 18px;
   }
 `;
 
