@@ -100,6 +100,7 @@ export const RiArrowDropDownLineStyle = styled(RiArrowDropDownLine)`
   width: 24px;
   height: 24px;
 `;
+
 // TODO: 백오피스에서 faq crud 관리(api 호출)
 
 const Category = () => {
