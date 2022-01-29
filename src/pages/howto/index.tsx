@@ -1,7 +1,14 @@
 import React from "react";
+import Footer from "../../common/global/Footer";
+import Section from "../../component/howto/Section1";
 
 const Howto = () => {
-  return <div>howtouse</div>;
+  return (
+    <>
+      <Section />
+      <Footer />
+    </>
+  );
 };
 
 export default Howto;
