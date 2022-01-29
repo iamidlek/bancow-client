@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "faq_category": "전체", "구매하기"
+    "faq_category": ["전체", "구매하기"],
     "question": "Q. 구매 금액은 어떻게 지불하나요?",
     "answer": "보유하고 계신 예치금에서 구매하신 지분 금액만큼 차감됩니다.",
     "username": "leedawn",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "faq_category": "전체",
+    "faq_category": ["전체", "사육중"],
     "question": "Q. 구매 금액은 어떻게 지불하나요?",
     "answer": "보유하고 계신 예치금에서 구매하신 지분 금액만큼 차감됩니다.",
     "username": "leedawn",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "faq_category": "전체",
+    "faq_category": ["전체", "사육중"],
     "question": "Q. 구매 금액은 어떻게 지불하나요?",
     "answer": "보유하고 계신 예치금에서 구매하신 지분 금액만큼 차감됩니다.",
     "username": "leedawn",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "faq_category": "전체",
+    "faq_category": ["전체", "출하 및 경매"],
     "question": "Q. 구매 금액은 어떻게 지불하나요?",
     "answer": "보유하고 계신 예치금에서 구매하신 지분 금액만큼 차감됩니다.",
     "username": "leedawn",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "faq_category": "전체",
+    "faq_category": ["전체", "출하 및 경매"],
     "question": "Q. 구매 금액은 어떻게 지불하나요?",
     "answer": "보유하고 계신 예치금에서 구매하신 지분 금액만큼 차감됩니다.",
     "username": "leedawn",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "faq_category": "전체",
+    "faq_category": ["전체", "출하 및 경매"],
     "question": "Q. 구매 금액은 어떻게 지불하나요?",
     "answer": "보유하고 계신 예치금에서 구매하신 지분 금액만큼 차감됩니다.",
     "username": "leedawn",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "faq_category": "전체",
+    "faq_category": ["전체", "회원 관련"],
     "question": "Q. 구매 금액은 어떻게 지불하나요?",
     "answer": "보유하고 계신 예치금에서 구매하신 지분 금액만큼 차감됩니다.",
     "username": "leedawn",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "faq_category": "전체",
+    "faq_category": ["전체", "회원 관련"],
     "question": "Q. 구매 금액은 어떻게 지불하나요?",
     "answer": "보유하고 계신 예치금에서 구매하신 지분 금액만큼 차감됩니다.",
     "username": "leedawn",
