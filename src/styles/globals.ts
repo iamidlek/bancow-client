@@ -62,17 +62,8 @@ export const GlobalStyles = createGlobalStyle<DefaultTheme>`
     border-radius:30px;
     margin-top:80px;
     box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.2);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
     @media ${(props) => props.theme.breakpoints.md} {
       // max-width:200px;
