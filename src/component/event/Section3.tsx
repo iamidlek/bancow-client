@@ -23,16 +23,20 @@ const Container = styled.div`
   }
 `;
 
-const Section3 = () => {
+const Section3 = ({ isEnd }: { isEnd: boolean }) => {
   return (
     <Section>
       <Container>
+        {isEnd && (
+          <>
+            <EventCard />
+            <EventCard />
+            <EventCard />
+            <EventCard />
+            <EventCard />
+          </>
+        )}
         {/* ssr로 프롭스 받아서 내용을 채우면 좋을 듯 */}
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
       </Container>
     </Section>
   );

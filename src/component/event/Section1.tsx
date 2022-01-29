@@ -9,7 +9,7 @@ const Section = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  flex-shrink: 0;
   @media ${(props) => props.theme.breakpoints.md} {
     height: 180px;
   }
