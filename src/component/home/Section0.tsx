@@ -1,6 +1,5 @@
 import React from "react";
 import ReviewsSlider from "./components/ReviewsSlider";
-import ModeToggle from "./components/ModeToggle";
 import DetailLink from "./components/DetailLink";
 import {
   MainImgBox,
@@ -32,7 +31,6 @@ const Section1 = () => {
           </MainTextSmall>
           <AppLinkBox />
           <DetailLink />
-          <ModeToggle />
         </Box>
       </Container>
       <ReviewsSlider />
