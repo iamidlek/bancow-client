@@ -8,8 +8,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import ModeToggle from "../ModeToggle";
 
 export const NavBox = styled.div`
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.alt.backgroud5};
   @media ${(props) => props.theme.breakpoints.md} {
+    background-color: ${(props) => props.theme.alt.backgroud2};
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
     background-color: ${(props) => props.theme.colors.point};
   }
 `;
@@ -78,7 +81,7 @@ const GNB = () => {
             </a>
           </Link>
           <Link href="/event">
-            <a className={router.pathname === "/event" ? "active" : ""}>
+            <a className={router.pathname.includes("/event") ? "active" : ""}>
               <HeadLine6>이벤트</HeadLine6>
             </a>
           </Link>
