@@ -55,7 +55,7 @@ const Section1 = () => {
           <Text>
             우선 현재 구매 가능한 송아지들을 둘러볼 수 있어요. 4만원부터 원하는
             지분 만큼 한우 구매가 가능해요.
-            <SubInfo>*유전지수, 농가등급, 예상수익률 확인</SubInfo>
+            <SubInfo as="p">*유전지수, 농가등급, 예상수익률 확인</SubInfo>
           </Text>
           <LinkText onClick={() => trigger(1)}>
             영상 가이드 <HiArrowSmRight />
@@ -72,7 +72,7 @@ const Section1 = () => {
           <Text>
             농가에서 알아서 키워주는 내 소가 자라는 모습을 업데이트 되는
             사진으로 확인 할 수 있어요.
-            <SubInfo>*체중, 건강검진 내역 확인</SubInfo>
+            <SubInfo as="p">*체중, 건강검진 내역 확인</SubInfo>
           </Text>
           <LinkText onClick={() => trigger(2)}>
             영상 가이드 <HiArrowSmRight />
@@ -87,7 +87,9 @@ const Section1 = () => {
           <Text>
             내 소의 출하 과정을 실시간으로 보고 출하부터 등급 판정까지 한 눈에
             알 수 있어요.
-            <SubInfo>*출하일, 도축일, 경매일, 판정결과, 수익금, 수익률</SubInfo>
+            <SubInfo as="p">
+              *출하일, 도축일, 경매일, 판정결과, 수익금, 수익률
+            </SubInfo>
           </Text>
           <LinkText onClick={() => trigger(3)}>
             영상 가이드 <HiArrowSmRight />
