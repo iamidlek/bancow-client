@@ -24,6 +24,7 @@ export const Card = styled.div`
   margin-bottom: 93px;
   border-radius: 20px;
   box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
+  background: white;
   overflow: hidden;
   @media ${(props) => props.theme.breakpoints.md} {
     width: 585px;
@@ -183,8 +184,8 @@ const Section2 = () => {
             </ResponsiveText>
           </HeadLine3>
         </TextBox>
-        <ImgProducer src="/storypage1-1.svg" alt="producer" />
-        <ImgConsumer src="/storypage1-2.svg" alt="consumer" />
+        <ImgProducer src="/storypage/storypage1-1.svg" alt="producer" />
+        <ImgConsumer src="/storypage/storypage1-2.svg" alt="consumer" />
       </Card>
       <Card>
         <TextBox mt={170} ml={546}>
@@ -196,7 +197,7 @@ const Section2 = () => {
             </ResponsiveText>
           </HeadLine3>
         </TextBox>
-        <ImgSharingProfit src="/storypage2.svg" alt="sharingprofit" />
+        <ImgSharingProfit src="/storypage/storypage2.svg" alt="sharingprofit" />
       </Card>
       <ResponsiveBoxWeb>
         <Card>
@@ -214,11 +215,11 @@ const Section2 = () => {
               <span>새로운 투자시장에 진출하는 기회를 가져요</span>
             </HeadLine3>
             <ImgProductivity
-              src="/storypage3-1.svg"
+              src="/storypage/storypage3-1.svg"
               alt="higher productivity"
             />
             <ImgConsumer2
-              src="/storypage3-2.svg"
+              src="/storypage/storypage3-2.svg"
               alt="consumer in a new investment market"
             />
           </TextBox>
@@ -235,7 +236,10 @@ const Section2 = () => {
               </ResponsiveText>
             </HeadLine3>
           </TextBox>
-          <ImgProductivity src="/storypage3-1.svg" alt="higher productivity" />
+          <ImgProductivity
+            src="/storypage/storypage3-1.svg"
+            alt="higher productivity"
+          />
         </Card>
         <Card>
           <TextBox mt={96} ml={108}>
@@ -247,7 +251,7 @@ const Section2 = () => {
               </ResponsiveText>
             </HeadLine3>
             <ImgConsumer2
-              src="/storypage3-2.svg"
+              src="/storypage/storypage3-2.svg"
               alt="consumer in a new investment market"
             />
           </TextBox>

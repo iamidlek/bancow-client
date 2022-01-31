@@ -25,7 +25,7 @@ export const SectionBox = styled.div`
 export const TextBox = styled.div`
   width: 803px;
   height: 178px;
-
+  color: ${(props) => props.theme.alt.text1};
   @media ${(props) => props.theme.breakpoints.md} {
     width: 330px;
     height: 60px;
