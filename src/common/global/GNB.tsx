@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { HeadLine6 } from "../typography";
@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Logo from "../Logo";
 import { GiHamburgerMenu } from "react-icons/gi";
 import ModeToggle from "../ModeToggle";
+import MobileMenu from "./MobileMenu";
 
 export const NavBox = styled.div`
   background-color: ${(props) => props.theme.alt.backgroud5};
@@ -54,8 +55,24 @@ export const MenuArea = styled.div`
   }
 `;
 
+export const LinkTab = styled(HeadLine6)`
+  font-size: 20px;
+  color: ${(props) => props.theme.alt.text1};
+  a.active & {
+    color: ${(props) => props.theme.alt.text5};
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 16px;
+    color: ${(props) => props.theme.colors.white};
+    a.active & {
+      color: ${(props) => props.theme.colors.gray4};
+    }
+  }
+`;
+
 const GNB = () => {
-  const router = useRouter();
+  const { pathname } = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <NavBox>
       <Nav>
@@ -66,43 +83,49 @@ const GNB = () => {
         </Link>
         <MenuArea>
           <Link href="/story">
-            <a className={router.pathname === "/story" ? "active" : ""}>
-              <HeadLine6>뱅카우정보</HeadLine6>
+            <a className={pathname === "/story" ? "active" : ""}>
+              <LinkTab>뱅카우정보</LinkTab>
             </a>
           </Link>
           <Link href="/howto">
-            <a className={router.pathname === "/howto" ? "active" : ""}>
-              <HeadLine6>이용방법</HeadLine6>
+            <a className={pathname === "/howto" ? "active" : ""}>
+              <LinkTab>이용방법</LinkTab>
             </a>
           </Link>
           <Link href="/notice">
-            <a className={router.pathname === "/notice" ? "active" : ""}>
-              <HeadLine6>공지</HeadLine6>
+            <a className={pathname === "/notice" ? "active" : ""}>
+              <LinkTab>공지</LinkTab>
             </a>
           </Link>
           <Link href="/event">
-            <a className={router.pathname.includes("/event") ? "active" : ""}>
-              <HeadLine6>이벤트</HeadLine6>
+            <a className={pathname.includes("/event") ? "active" : ""}>
+              <LinkTab>이벤트</LinkTab>
             </a>
           </Link>
           <Link href="/faq">
-            <a className={router.pathname === "/faq" ? "active" : ""}>
-              <HeadLine6>FAQ</HeadLine6>
+            <a className={pathname === "/faq" ? "active" : ""}>
+              <LinkTab>FAQ</LinkTab>
             </a>
           </Link>
           <Link href="/farmer">
-            <a className={router.pathname === "/farmer" ? "active" : ""}>
-              <HeadLine6>입점문의</HeadLine6>
+            <a className={pathname === "/farmer" ? "active" : ""}>
+              <LinkTab>입점문의</LinkTab>
             </a>
           </Link>
           <ModeToggle />
           <div>
             <GiHamburgerMenu
-              style={{ color: "white", fontSize: "28px", marginTop: "2px" }}
+              onClick={() => setIsOpen(true)}
+              style={{
+                color: "white",
+                fontSize: "28px",
+                marginTop: "2px"
+              }}
             />
           </div>
         </MenuArea>
       </Nav>
+      <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
     </NavBox>
   );
 };

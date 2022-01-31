@@ -30,7 +30,8 @@ export const themeDefault: DefaultTheme = {
     text1: "#000000", // 검정 글씨 => 흰 글씨
     text2: "#4B5360", // 회색 글씨 => 흰 글씨
     text3: "#000000", // 검정글씨 => darkmode기본색
-    text4: "#0048FA" // point(파랑) => 흰 글씨
+    text4: "#0048FA", // point(파랑) => 흰 글씨
+    text5: "#0048FA" // point(파랑) => gray4
   }
 };
 
@@ -64,6 +65,7 @@ export const darkTheme: DefaultTheme = {
     text1: "#FFFFFF",
     text2: "#FFFFFF",
     text3: "#353639",
-    text4: "#FFFFFF"
+    text4: "#FFFFFF",
+    text5: "#D5D5DB"
   }
 };
