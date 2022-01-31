@@ -11,7 +11,6 @@ import SwiperCore, { Scrollbar } from "swiper";
 // install Swiper modules
 SwiperCore.use([Scrollbar]);
 export const SectionBox = styled.div`
-  background: ${(props) => props.theme.alt.backgroud1};
   width: 100%;
   height: fit-content;
   padding-top: 44px;

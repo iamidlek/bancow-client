@@ -24,6 +24,7 @@ export const Card = styled.div`
   margin-bottom: 93px;
   border-radius: 20px;
   box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
+  background: white;
   overflow: hidden;
   @media ${(props) => props.theme.breakpoints.md} {
     width: 585px;

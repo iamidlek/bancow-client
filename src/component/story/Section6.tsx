@@ -7,19 +7,20 @@ export const SectionBox = styled.div`
   position: relative;
   width: 100%;
   max-width: 1332px;
-  height: 780px;
-  margin: 180px auto 150px;
+  height: 930px;
+  margin: 180px auto 0;
+  background: ${(props) => props.theme.alt.backgroud1};
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 576px;
-    margin: 80px auto 35px;
+    margin: 80px auto 0;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    height: 884px;
+    height: 924px;
+    margin-top: 10px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 40px auto;
   }
 `;
 
@@ -88,7 +89,7 @@ export const EmployeeProfileContainer = styled.div`
 export const EmployeeProfileCard = styled.div`
   box-sizing: border-box;
   width: 392px;
-  height: 152px;
+  height: 150px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -103,8 +104,9 @@ export const EmployeeProfileCard = styled.div`
 
 export const EmployeeImg = styled.img`
   display: block;
-  width: 151px;
-  height: 152px;
+  width: 150px;
+  height: 150px;
+  border-bottom-right-radius: 50px;
   @media ${(props) => props.theme.breakpoints.md} {
     width: 92px;
     height: 93px;
@@ -128,6 +130,7 @@ export const EmployeeInfo = styled.div`
     margin: 12px 0 14px;
   }
   p {
+    font-size: 16px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 160px;
