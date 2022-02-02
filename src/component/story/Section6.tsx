@@ -12,6 +12,7 @@ export const SectionBox = styled.div`
   background: ${(props) => props.theme.alt.backgroud1};
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 576px;
+    height: 620px;
     margin: 80px auto 0;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
