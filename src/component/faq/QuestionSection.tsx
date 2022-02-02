@@ -64,14 +64,14 @@ export const InquiryBtn = styled.button`
   background-color: ${(props) => props.theme.colors.white};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 112.6px;
-    height: 23.48px;
+    width: 220px;
+    height: 46px;
     margin-top: 30.4px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 57.74px;
-    height: 12.04px;
+    width: 150px;
+    height: 40px;
     margin-top: 15.6px;
   }
 `;
