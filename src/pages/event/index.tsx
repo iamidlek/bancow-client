@@ -1,6 +1,5 @@
-import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import { useRouter } from 'next/router';
 import { Wrapper } from '../../common/typography';
 import EventDetail from '../../component/event/components/EventDetail';
 import Section1 from '../../component/event/Section1';
