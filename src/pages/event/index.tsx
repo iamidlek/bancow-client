@@ -1,7 +1,28 @@
-import React from "react";
+import { useRouter } from 'next/router';
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { Wrapper } from '../../common/typography';
+import EventDetail from '../../component/event/components/EventDetail';
+import Section1 from '../../component/event/Section1';
+import Section2 from '../../component/event/Section2';
+import Section3 from '../../component/event/Section3';
 
 const Event = () => {
-  return <div>event</div>;
+	const { query } = useRouter();
+	const [isEnd, setIsEnd] = useState(false);
+	return (
+		<Wrapper>
+			<Section1 />
+			{query.eventID ? (
+				<EventDetail />
+			) : (
+				<>
+					<Section2 isEnd={isEnd} setIsEnd={setIsEnd} />
+					<Section3 isEnd={isEnd} />
+				</>
+			)}
+		</Wrapper>
+	);
 };
 
 export default Event;
