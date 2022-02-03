@@ -132,6 +132,9 @@ export const EmployeeInfo = styled.div`
   }
   p {
     font-size: 16px;
+    @media ${(props) => props.theme.breakpoints.sm} {
+      font-size: 12px;
+    }
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 160px;
