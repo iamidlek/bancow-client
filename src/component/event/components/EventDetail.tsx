@@ -1,15 +1,16 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import styled from "styled-components";
 import { Emphasis, HeadLine5 } from "../../../common/typography";
 
-const Box = styled.div`
-  width: 350px;
-  height: 500px;
-  background-color: ${(props) => props.theme.alt.backgroud4};
-  border-radius: 15px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  padding: 40px 0;
+const Section = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: ${(props) => props.theme.alt.backgroud1};
 `;
 
 const Title = styled(HeadLine5)`
@@ -32,6 +33,7 @@ const Desc = styled(SubText)`
   margin-top: 20px;
   height: 63px;
   overflow: hidden;
+  width: 300px;
 `;
 
 const Img = styled.div`
@@ -42,11 +44,15 @@ const Img = styled.div`
   background-size: cover;
 `;
 
-const EventCard = () => {
+const EventDetail = () => {
+  const { query } = useRouter();
+  console.log(query.eventID); // 추가 정보요청
   return (
-    <Box>
-      <Title>풍차돌리기 이벤트</Title>
-      <SubText>마감</SubText>
+    <Section>
+      <div>
+        <Title>풍차돌리기 이벤트</Title>
+        <SubText>마감</SubText>
+      </div>
       <Img />
       <Desc>
         풍차돌리기란, 적금 또는 예금 통장을 1년 동안 매달 만드는 방법을 일컫는
@@ -55,14 +61,14 @@ const EventCard = () => {
         만드는 방법을 일컫는 말이에요.
       </Desc>
       <SubText>
-        <Link href="event/?eventID=1234" as="/event/1234" scroll={false}>
+        <Link href="/event" scroll={false}>
           <a>
-            <Emphasis>자세히</Emphasis>
+            <Emphasis>돌아가기</Emphasis>
           </a>
         </Link>
       </SubText>
-    </Box>
+    </Section>
   );
 };
 
-export default EventCard;
+export default EventDetail;

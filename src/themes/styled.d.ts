@@ -32,6 +32,7 @@ declare module "styled-components" {
       text2: string;
       text3: string;
       text4: string;
+      text5: string;
     };
   }
 }

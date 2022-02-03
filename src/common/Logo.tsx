@@ -5,14 +5,12 @@ const LogoBox = styled.div`
   width: 147px;
   height: 27px;
   svg {
-    fill: black;
+    fill: ${(props) => props.theme.alt.text1};
   }
   @media ${(props) => props.theme.breakpoints.md} {
     svg {
       fill: white;
     }
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
   }
 `;
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -66,8 +66,12 @@ const Tab = styled.div`
   }
 `;
 
-const Section2 = () => {
-  const [isEnd, setIsEnd] = useState(false);
+interface Props {
+  isEnd: boolean;
+  setIsEnd: Dispatch<SetStateAction<boolean>>;
+}
+
+const Section2: React.FC<Props> = ({ isEnd, setIsEnd }) => {
   return (
     <Section>
       <Container>
