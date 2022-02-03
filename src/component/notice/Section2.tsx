@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
 import { HeadLine4, HeadLine5 } from '../../common/typography';
@@ -50,10 +51,12 @@ const HeadLine5Style = styled(HeadLine5)`
 const Section2 = () => {
 	return (
 		<Section>
-			<UnderLineBox href="http://www.todaykorea.co.kr/news/articleView.html?idxno=296481" target="_blank">
-				<HeadLine4Style>한우자산플랫폼 뱅카우, 6차 펀딩 39분만에 종료</HeadLine4Style>
-				<HeadLine5Style>2022-01-27</HeadLine5Style>
-			</UnderLineBox>
+			<Link href="notice/?noticeID=1234" as="/notice/1234">
+				<UnderLineBox>
+					<HeadLine4Style>한우자산플랫폼 뱅카우, 6차 펀딩 39분만에 종료</HeadLine4Style>
+					<HeadLine5Style>2022-01-27</HeadLine5Style>
+				</UnderLineBox>
+			</Link>
 			<UnderLineBox href="http://www.todaykorea.co.kr/news/articleView.html?idxno=296481" target="_blank">
 				<HeadLine4Style>한우자산플랫폼 뱅카우, 6차 펀딩 39분만에 종료</HeadLine4Style>
 				<HeadLine5Style>2022-01-27</HeadLine5Style>
